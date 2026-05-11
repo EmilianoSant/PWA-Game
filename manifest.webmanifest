@@ -1,11 +1,11 @@
 {
     "name": "BANG BANG",
     "short_name": "BANG BANG",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#fff8ff",
     "lang": "es",
-    "scope": "/",
+    "scope": "./",
     "description": "BANG BANG es un juego de cartas en el que los jugadores asumen el papel de personajes del Lejano Oeste y compiten para eliminar a sus oponentes. Cada jugador tiene un mazo de cartas que representa sus habilidades, armas y acciones. El objetivo del juego es ser el último jugador en pie, eliminando a los demás jugadores mediante el uso estratégico de las cartas.",
     "theme_color": "#40C090",
     "icons": [
