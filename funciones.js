@@ -3,7 +3,7 @@ function jugar() {
     setTimeout(function () {
         window.location.assign("personaje.html");
     }, 2000);
-    var audio = new Audio('adriana-salte.mp3');
+    var audio = new Audio('audio/adriana-salte.mp3');
     audio.play();
 }
 
@@ -28,7 +28,7 @@ function siguiente() {
     }
     document.getElementById('personaje').src = 'imagenes/personaje' + personajeSeleccionado + '.png';
 
-    var sfx = new Audio('soy-mencho-wey.mp3');
+    var sfx = new Audio('audio/soy-tremendo.mp3');
     sfx.play();
 }
 
@@ -39,7 +39,7 @@ function anterior() {
     }
     document.getElementById('personaje').src = 'imagenes/personaje' + personajeSeleccionado + '.png';
 
-    var sfx = new Audio('soy-mencho-wey.mp3');
+    var sfx = new Audio('audio/soy-tremendo.mp3');
     sfx.play();
 }
 
@@ -52,7 +52,7 @@ function seleccionarPersonaje() {
     setTimeout(function () {
         window.location.assign("personaje2.html");
     }, 2000);
-    var sfxSelect = new Audio('rosa-gdlp.mp3');
+    var sfxSelect = new Audio('audio/rosa-gdlp.mp3');
     sfxSelect.play();
 }
 
@@ -65,16 +65,16 @@ function comenzarJuego() {
     setTimeout(function () {
         window.location.assign("juego.html");
     }, 2000);
-    var sfxStart = new Audio('rosa-gdlp.mp3');
+    var sfxStart = new Audio('audio/rosa-gdlp.mp3');
     sfxStart.play();
 }
 
 //funcion para cargar el fondo del escenario y a los personajes seleccionados con el nombre del jugador
 function cargarEscenario() {
 
-    //inicializa el contador de muertes
+    //inicializa el contador de muertes 
     if (!localStorage.getItem('marcador1')) {
-        //inicializa el contador de muertes en 0
+        //inicializa el contador de muertes en 0 
         localStorage.setItem('marcador1', 0);
         localStorage.setItem('marcador2', 0);
         //cargar en el html el valor de las variables
@@ -157,7 +157,7 @@ function listos() {
 }
 
 function conteo() {
-    var sfxclick = new Audio('pew-pew-disparo.mp3');
+    var sfxclick = new Audio('audio/pew-pew-disparo.mp3');
     document.querySelector('.msj').style.opacity = '0';
     document.querySelector('.no3').style.opacity = '1';
     sfxclick.play();
@@ -200,7 +200,7 @@ function disparo1() {
         window.location.assign("juego.html");
     }, 2000);
 
-    var sfxdisparo = new Audio('rosa-gdlp.mp3');
+    var sfxdisparo = new Audio('audio/rosa-gdlp.mp3');
     sfxdisparo.play();
 
 }
@@ -222,7 +222,7 @@ function disparo2() {
         window.location.assign("juego.html");
     }, 2000);
 
-    var sfxdisparo = new Audio('rosa-gdlp.mp3');
+    var sfxdisparo = new Audio('audio/rosa-gdlp.mp3');
     sfxdisparo.play();
 
 }
